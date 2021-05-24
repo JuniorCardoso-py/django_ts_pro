@@ -40,11 +40,11 @@ $ poetry install
 # Next run the DataBase docker container on cmd/terminal
 $ docker-compose up --build -d
 
-# You will need to create an user and an password to access the admin site
-$ python manage.py createsuperuser
-
 # You may need to run the migrations
 $ python manage.py migrate
+
+# You will need to create an user and an password to access the admin site
+$ python manage.py createsuperuser
 
 # The server will start on port:8000 access <http://localhost:8000/admin>
 $ python manage.py runserver
