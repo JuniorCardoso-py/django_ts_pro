@@ -1,0 +1,12 @@
+services:
+    django_postgres:
+        image: postgres:latest
+        container_name: postgres_db
+        ports: 
+            - "5432:5432"
+        expose: 
+            - "5432"
+        environment: 
+            POSTGRES_DB: "registers"
+            POSTGRES_USER: "olist_django"
+            POSTGRES_PASSWORD: "mudar123"
